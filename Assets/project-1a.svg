@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f8f4ee"/>
+  <rect x="80" y="80" width="1040" height="640" rx="40" fill="#ffffff" stroke="#d4a574" stroke-width="14"/>
+  <text x="600" y="430" text-anchor="middle" font-family="Poppins, sans-serif" font-size="58" fill="#4a5f75">Project image A</text>
+  <text x="600" y="520" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="34" fill="#7d8d98">Visual summary</text>
+</svg>

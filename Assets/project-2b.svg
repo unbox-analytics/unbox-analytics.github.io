@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#eff3ee"/>
+  <rect x="80" y="80" width="1040" height="640" rx="40" fill="#ffffff" stroke="#4a9b7f" stroke-width="14"/>
+  <path d="M320 580c120-180 300-230 540-140" fill="none" stroke="#4a9b7f" stroke-width="24" stroke-linecap="round"/>
+  <path d="M380 420c80-100 180-65 320 30" fill="none" stroke="#d4a574" stroke-width="24" stroke-linecap="round"/>
+  <text x="600" y="430" text-anchor="middle" font-family="Poppins, sans-serif" font-size="58" fill="#2c3e50">Project image D</text>
+  <text x="600" y="520" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="34" fill="#6b7280">Workflow sample</text>
+</svg>
