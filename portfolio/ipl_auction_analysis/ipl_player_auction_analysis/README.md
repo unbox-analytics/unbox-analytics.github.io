@@ -6,13 +6,13 @@
 
 This project analyzes IPL player auction data using SQL Server. The objective is to demonstrate practical SQL skills commonly used in business analytics projects, including:
 
-* Aggregations
-* Window Functions
-* Common Table Expressions (CTEs)
-* Ranking Functions
-* Conditional Logic
-* Correlated Subqueries
-* Business-Oriented Analysis
+- Aggregations
+- Window Functions
+- Common Table Expressions (CTEs)
+- Ranking Functions
+- Conditional Logic
+- Correlated Subqueries
+- Business-Oriented Analysis
 
 The analysis focuses on team spending patterns, player valuations, budget allocation, and role-based pricing.
 
@@ -42,22 +42,23 @@ The analysis focuses on team spending patterns, player valuations, budget alloca
 
 **SQL Concepts Used:**
 
-* GROUP BY
-* Aggregation
-* ORDER BY
-```
-/**************************************************************************
-    1. Total Spending by Team
-    Calculate the total amount spent by each franchise.
-**************************************************************************/
+- GROUP BY
+- Aggregation
+- ORDER BY
 
+/**************************************************************************
+ 1. Total Spending by Team
+Calculate the total amount spent by each franchise.
+/**************************************************************************
+```sql
 SELECT
     Team,
     SUM(Price_in_cr) AS Total_Spend_Cr
 FROM IPLPlayers
 GROUP BY Team
 ORDER BY Total_Spend_Cr DESC;
-``` 
+```
+
 ---
 
 ## 2. Who are the highest-paid all-rounders?
@@ -66,9 +67,9 @@ ORDER BY Total_Spend_Cr DESC;
 
 **SQL Concepts Used:**
 
-* Filtering
-* Sorting
-* TOP N Analysis
+- Filtering
+- Sorting
+- TOP N Analysis
 
 ---
 
@@ -78,8 +79,8 @@ ORDER BY Total_Spend_Cr DESC;
 
 **SQL Concepts Used:**
 
-* Window Functions
-* RANK()
+- Window Functions
+- RANK()
 
 ---
 
@@ -89,8 +90,8 @@ ORDER BY Total_Spend_Cr DESC;
 
 **SQL Concepts Used:**
 
-* ROW_NUMBER()
-* Conditional Aggregation
+- ROW_NUMBER()
+- Conditional Aggregation
 
 ---
 
@@ -100,8 +101,8 @@ ORDER BY Total_Spend_Cr DESC;
 
 **SQL Concepts Used:**
 
-* Window Aggregates
-* Percentage Calculations
+- Window Aggregates
+- Percentage Calculations
 
 ---
 
@@ -119,8 +120,8 @@ ORDER BY Total_Spend_Cr DESC;
 
 **SQL Concepts Used:**
 
-* CASE Statements
-* Aggregation
+- CASE Statements
+- Aggregation
 
 ---
 
@@ -130,9 +131,9 @@ ORDER BY Total_Spend_Cr DESC;
 
 **SQL Concepts Used:**
 
-* CTEs
-* UNION ALL
-* Aggregations
+- CTEs
+- UNION ALL
+- Aggregations
 
 ---
 
@@ -142,8 +143,8 @@ ORDER BY Total_Spend_Cr DESC;
 
 **SQL Concepts Used:**
 
-* Window Functions
-* Correlated Subqueries
+- Window Functions
+- Correlated Subqueries
 
 ---
 
@@ -153,41 +154,41 @@ ORDER BY Total_Spend_Cr DESC;
 
 **SQL Concepts Used:**
 
-* RANK()
-* Partitioning
+- RANK()
+- Partitioning
 
 ---
 
 # Key SQL Skills Demonstrated
 
-* Common Table Expressions (CTEs)
-* Window Functions
-* RANK()
-* ROW_NUMBER()
-* Aggregations
-* Conditional Logic
-* Correlated Subqueries
-* Data Segmentation
-* Business Analytics
+- Common Table Expressions (CTEs)
+- Window Functions
+- RANK()
+- ROW_NUMBER()
+- Aggregations
+- Conditional Logic
+- Correlated Subqueries
+- Data Segmentation
+- Business Analytics
 
 ---
 
 # Potential Dashboard Visualizations
 
-* Team Spending Comparison
-* Top Purchased Players
-* Spending Distribution by Role
-* Indian vs Overseas Analysis
-* Team Budget Allocation
-* Price Bracket Distribution
+- Team Spending Comparison
+- Top Purchased Players
+- Spending Distribution by Role
+- Indian vs Overseas Analysis
+- Team Budget Allocation
+- Price Bracket Distribution
 
 ---
 
 # Tools Used
 
-* SQL Server
-* SSMS
-* Power BI (optional dashboard layer)
+- SQL Server
+- SSMS
+- Power BI (optional dashboard layer)
 
 ---
 
@@ -195,8 +196,8 @@ ORDER BY Total_Spend_Cr DESC;
 
 This analysis demonstrates how SQL can be used to answer real-world business questions related to:
 
-* Budget allocation
-* Resource optimization
-* Performance investment
-* Market pricing analysis
-* Executive reporting
+- Budget allocation
+- Resource optimization
+- Performance investment
+- Market pricing analysis
+- Executive reporting
