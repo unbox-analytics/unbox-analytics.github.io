@@ -65,6 +65,19 @@ permalink: /portfolio/
   </article>
 </div>
 
+
+<hr />
+
+<h2 style="color: #d4a574;">📂 Featured Projects</h2>
+
+<p>🔗 <strong><a href="https://github.com/unbox-analytics/ipl_player_auction_analysis">IPL Players auction analysis</a></strong></p>
+<p>Explore data cleaning, analysis, and visualization projects for real-world business scenarios.</p>
+
+<p>🔗 <strong><a href="https://github.com/UnboxAnalytics/Ecommerce_Data_Analytics">Ecommerce Data Analytics</a></strong></p>
+<p>Explore data cleaning, analysis, and visualization projects for real-world business scenarios.</p>
+
+<hr />
+
 <style>
 .portfolio-hero {
   padding: 28px 0 18px;
