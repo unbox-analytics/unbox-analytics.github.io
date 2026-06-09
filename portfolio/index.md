@@ -73,7 +73,7 @@ permalink: /portfolio/
 <p>🔗 <strong><a href="https://github.com/unbox-analytics/ipl_player_auction_analysis">IPL Players auction analysis</a></strong></p>
 <p>Explore data cleaning, analysis, and visualization projects for real-world business scenarios.</p>
 
-<p>🔗 <strong><a href="https://github.com/UnboxAnalytics/Ecommerce_Data_Analytics">Ecommerce Data Analytics</a></strong></p>
+<p>🔗 <strong><a href="https://github.com/unbox-analytics/ecommerce">Ecommerce Data Analytics</a></strong></p>
 <p>Explore data cleaning, analysis, and visualization projects for real-world business scenarios.</p>
 
 <hr />
