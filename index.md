@@ -17,85 +17,7 @@ permalink: /
 
 <h2 style="color: #d4a574;"> <img width="" alt="Transparent logo" src="Assets/design_services_24dp_4D997F_FILL0_wght400_GRAD0_opsz24.svg"/>  Services</h2>
 
-<style>
-.hero {
-    padding: 24px 0 16px;
-}
-
-.hero h1 {
-    margin: 0;
-    color: #4a9b7f;
-    font-size: clamp(2rem, 4vw, 3rem);
-    line-height: 1.05;
-    max-width: 820px;
-}
-
-.hero-copy {
-    margin: 16px 0 0;
-    color: #4a5f75;
-    font-size: 1.05rem;
-    max-width: 760px;
-    line-height: 1.75;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    margin: 24px 0;
-}
-
-.service-card {
-    background: linear-gradient(135deg, #fafaf8 0%, #ffffff 100%);
-    border: 2px solid #e8ddd2;
-    border-radius: 12px;
-    padding: 24px;
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-}
-
-.service-card:hover {
-    border-color: #d4a574;
-    box-shadow: 0 12px 32px rgba(212, 165, 116, 0.15);
-    transform: translateY(-4px);
-}
-
-.service-icon {
-    font-size: 2.5rem;
-    margin-bottom: 12px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-}
-
-.service-card h3 {
-    margin: 0 0 8px 0;
-    color: #1b3a52;
-    font-size: 1.2rem;
-}
-
-.service-card p {
-    margin: 0 0 16px 0;
-    color: #4a5f75;
-    font-size: 0.95rem;
-    flex-grow: 1;
-}
-
-.service-card a {
-    color: #d4a574;
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    transition: gap 0.2s ease;
-}
-
-.service-card a:hover {
-    gap: 10px;
-}
-</style>
+<!-- Styles have been moved to assets/css/main.css -->
 
 <div class="services-grid">
   <div class="service-card">
@@ -140,51 +62,7 @@ permalink: /
 
 <h2 style="color: #d4a574;">🔧 Tech Stack</h2>
 
-<style>
-.tech-stack {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
-    margin: 24px 0;
-}
-
-.tech-item {
-    padding: 16px;
-    background: #fafaf8;
-    border-radius: 8px;
-    border-left: 4px solid #d4a574;
-}
-
-.tech-item-name {
-    font-weight: 600;
-    color: #1b3a52;
-    margin-bottom: 8px;
-}
-
-.skill-indicator {
-    display: flex;
-    gap: 4px;
-    align-items: center;
-}
-
-.skill-bar {
-    height: 8px;
-    width: 28px;
-    background: #e8ddd2;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.skill-bar.filled {
-    background: #d4a574;
-}
-
-.skill-label {
-    font-size: 0.85rem;
-    color: #6b7280;
-    min-width: 60px;
-}
-</style>
+<!-- Styles have been moved to assets/css/main.css -->
 
 <div class="tech-stack">
   <div class="tech-item">

@@ -1,0 +1,39 @@
+- name: "Programming Languages"
+  items:
+    - "Python"
+    - "SQL"
+    - "R"
+    - "JavaScript"
+    - "C"
+    - "Markdown"
+
+- name: "Cloud & Data Platforms"
+  items:
+    - "Google Cloud Platform"
+    - "BigQuery"
+    - "Adobe Experience Platform"
+    - "Google Cloud Storage"
+    - "Cloud Workflows"
+    - "Cloud Scheduler"
+    - "Secret Manager"
+    - "Looker Studio"
+    - "Tableau"
+
+- name: "Data Engineering"
+  items:
+    - "ETL/ELT Pipelines"
+    - "Data Modeling"
+    - "Pulumi (IaC)"
+    - "YAML Configuration"
+    - "Batch Processing"
+    - "Workflow Orchestration"
+    - "CI/CD Pipelines"
+
+- name: "Machine Learning"
+  items:
+    - "pandas"
+    - "NumPy"
+    - "Scikit-Learn"
+    - "TensorFlow"
+    - "PyTorch"
+    - "NLP"

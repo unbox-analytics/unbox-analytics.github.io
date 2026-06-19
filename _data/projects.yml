@@ -1,0 +1,47 @@
+- id: cart_abandonment
+  icon: "🛒"
+  tag: "DATA ENGINEERING • REVENUE GENERATION"
+  title: "Cart Abandonment Recovery System"
+  summary: "Sophisticated multi-stage data pipeline system that identifies cart abandoners across multiple product lines, then orchestrates targeted email campaigns through marketing automation platforms to recover lost revenue."
+  features:
+    - "Significant revenue recovery through intelligent customer journey orchestration and targeted email campaigns"
+    - "Complex SQL logic with consent management, duplicate prevention, and multi-brand customer identification"
+    - "Automated batch processing with cloud data warehouse to marketing platform integration and daily alerting"
+  techs:
+    - "CLOUD DATA WAREHOUSE"
+    - "MARKETING AUTOMATION PLATFORM"
+    - "CLOUD WORKFLOWS"
+    - "INFRASTRUCTURE AS CODE"
+    - "PYTHON"
+
+- id: email_attribution
+  icon: "📧"
+  tag: "BUSINESS INTELLIGENCE • REVENUE ATTRIBUTION"
+  title: "Email Campaign Attribution Dashboard"
+  summary: "Comprehensive revenue attribution system tracking customer journeys from email campaigns to purchases across multiple brands with sophisticated product revenue calculations."
+  features:
+    - "Multi-brand revenue attribution with 7-day attribution windows and complex product pricing logic"
+    - "Cross-platform data integration linking email events, clickstream data, and purchase transactions"
+    - "Powers executive Looker Studio dashboards for real-time campaign performance monitoring"
+  techs:
+    - "BIGQUERY"
+    - "SQL"
+    - "LOOKER STUDIO"
+    - "CLOUD SCHEDULER"
+    - "REVENUE ATTRIBUTION"
+
+- id: anomaly_detection
+  icon: "🛡️"
+  tag: "DATA ENGINEERING • MONITORING & ALERTING"
+  title: "AJO Campaign Anomaly Detection System"
+  summary: "Automated anomaly detection system monitoring marketing automation campaigns with intelligent alerting for proactive campaign management."
+  features:
+    - "Automated anomaly detection with containerized Python scripts and batch job orchestration"
+    - "Daily alerting system for anomaly notifications"
+    - "Proactive campaign monitoring preventing revenue loss through early anomaly detection"
+  techs:
+    - "PYTHON"
+    - "DOCKER"
+    - "CLOUD WORKFLOWS"
+    - "CLOUD SCHEDULER"
+    - "SECRET MANAGER"
