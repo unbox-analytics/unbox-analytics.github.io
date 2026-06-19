@@ -14,53 +14,71 @@ permalink: /portfolio/
 
 <div class="projects-grid">
   <article class="project-card">
-    <div class="project-copy">
-      <span class="project-tag">Ecommerce Analytics</span>
-      <h2>Revenue growth through cleaner data</h2>
-      <p>Delivered a cross-platform analytics workflow that brought sales, customer, and inventory data into one reliable reporting source with faster refresh cycles and better decision visibility.</p>
-      <ul>
-        <li>Data cleaning across CSV, Excel, and SQL sources</li>
-        <li>Automated weekly sales reports</li>
-        <li>Revenue insights surfaced in dashboard visuals</li>
-      </ul>
+    <div class="project-card-top">
+      <div class="project-icon">🛒</div>
+      <div>
+        <span class="project-tag">DATA ENGINEERING • REVENUE GENERATION</span>
+        <h2>Cart Abandonment Recovery System</h2>
+      </div>
     </div>
-    <div class="project-images">
-      <img src="{{ '/Assets/project-1a.svg' | relative_url }}" alt="Ecommerce analytics dashboard" />
-      <img src="{{ '/Assets/project-1b.svg' | relative_url }}" alt="Ecommerce data workflow" />
-    </div>
-  </article>
-
-  <article class="project-card">
-    <div class="project-copy">
-      <span class="project-tag">Process Optimization</span>
-      <h2>Faster reporting with automated workflows</h2>
-      <p>Created templates and process improvements that reduced manual report preparation time, improved data accuracy, and gave the leadership team a single view of operational performance.</p>
-      <ul>
-        <li>Power Query automation</li>
-        <li>Error-resistant validation checks</li>
-        <li>Reusable reporting templates</li>
-      </ul>
-    </div>
-    <div class="project-images">
-      <img src="{{ '/Assets/project-2a.svg' | relative_url }}" alt="Process optimization dashboard" />
-      <img src="{{ '/Assets/project-2b.svg' | relative_url }}" alt="Automated workflow example" />
+    <p class="project-summary">Sophisticated multi-stage data pipeline system that identifies cart abandoners across multiple product lines, then orchestrates targeted email campaigns through marketing automation platforms to recover lost revenue.</p>
+    <ul class="project-features">
+      <li><span class="feature-icon">💰</span>Significant revenue recovery through intelligent customer journey orchestration and targeted email campaigns</li>
+      <li><span class="feature-icon">🧠</span>Complex SQL logic with consent management, duplicate prevention, and multi-brand customer identification</li>
+      <li><span class="feature-icon">⚙️</span>Automated batch processing with cloud data warehouse to marketing platform integration and daily alerting</li>
+    </ul>
+    <div class="project-tech-list">
+      <span>CLOUD DATA WAREHOUSE</span>
+      <span>MARKETING AUTOMATION PLATFORM</span>
+      <span>CLOUD WORKFLOWS</span>
+      <span>INFRASTRUCTURE AS CODE</span>
+      <span>PYTHON</span>
     </div>
   </article>
 
   <article class="project-card">
-    <div class="project-copy">
-      <span class="project-tag">Dashboard Development</span>
-      <h2>Actionable executive views for decision makers</h2>
-      <p>Designed dashboard summaries that turn complex KPIs into simple, actionable information so stakeholders can quickly understand performance and take the next step.</p>
-      <ul>
-        <li>Clear KPI storytelling</li>
-        <li>Executive-ready visuals</li>
-        <li>Flexible filtering for business teams</li>
-      </ul>
+    <div class="project-card-top">
+      <div class="project-icon">📧</div>
+      <div>
+        <span class="project-tag">BUSINESS INTELLIGENCE • REVENUE ATTRIBUTION</span>
+        <h2>Email Campaign Attribution Dashboard</h2>
+      </div>
     </div>
-    <div class="project-images">
-      <img src="{{ '/Assets/project-2b.svg' | relative_url }}" alt="Dashboard project sample" />
-      <img src="{{ '/Assets/project-1a.svg' | relative_url }}" alt="Executive metrics overview" />
+    <p class="project-summary">Comprehensive revenue attribution system tracking customer journeys from email campaigns to purchases across multiple brands with sophisticated product revenue calculations.</p>
+    <ul class="project-features">
+      <li><span class="feature-icon">📊</span>Multi-brand revenue attribution with 7-day attribution windows and complex product pricing logic</li>
+      <li><span class="feature-icon">🔗</span>Cross-platform data integration linking email events, clickstream data, and purchase transactions</li>
+      <li><span class="feature-icon">📈</span>Powers executive Looker Studio dashboards for real-time campaign performance monitoring</li>
+    </ul>
+    <div class="project-tech-list">
+      <span>BIGQUERY</span>
+      <span>SQL</span>
+      <span>LOOKER STUDIO</span>
+      <span>CLOUD SCHEDULER</span>
+      <span>REVENUE ATTRIBUTION</span>
+    </div>
+  </article>
+
+  <article class="project-card">
+    <div class="project-card-top">
+      <div class="project-icon">🛡️</div>
+      <div>
+        <span class="project-tag">DATA ENGINEERING • MONITORING & ALERTING</span>
+        <h2>AJO Campaign Anomaly Detection System</h2>
+      </div>
+    </div>
+    <p class="project-summary">Automated anomaly detection system monitoring marketing automation campaigns with intelligent alerting for proactive campaign management.</p>
+    <ul class="project-features">
+      <li><span class="feature-icon">🤖</span>Automated anomaly detection with containerized Python scripts and batch job orchestration</li>
+      <li><span class="feature-icon">🔔</span>Daily alerting system for anomaly notifications</li>
+      <li><span class="feature-icon">🛡️</span>Proactive campaign monitoring preventing revenue loss through early anomaly detection</li>
+    </ul>
+    <div class="project-tech-list">
+      <span>PYTHON</span>
+      <span>DOCKER</span>
+      <span>CLOUD WORKFLOWS</span>
+      <span>CLOUD SCHEDULER</span>
+      <span>SECRET MANAGER</span>
     </div>
   </article>
 </div>
@@ -114,81 +132,123 @@ permalink: /portfolio/
 .projects-grid {
   display: grid;
   gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .project-card {
+  background: #ffffff;
+  border: 1px solid rgba(212, 165, 116, 0.18);
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 22px 40px rgba(18, 35, 44, 0.07);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
-  background: linear-gradient(180deg, #ffffff 0%, #fafaf8 100%);
-  border: 1px solid #f0ebe3;
-  border-radius: 22px;
-  padding: 28px;
-  box-shadow: 0 18px 42px rgba(18, 35, 44, 0.06);
+  gap: 24px;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(18, 35, 44, 0.12);
+  border-color: rgba(212, 165, 116, 0.32);
+}
+
+.project-card-top {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  align-items: center;
+}
+
+.project-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: rgba(212, 165, 116, 0.14);
+  color: #d4a574;
+  font-size: 1.45rem;
+  transition: transform 0.28s ease, background 0.28s ease;
+}
+
+.project-card:hover .project-icon {
+  transform: scale(1.06);
+  background: rgba(212, 165, 116, 0.22);
 }
 
 .project-tag {
-  display: inline-block;
-  margin-bottom: 12px;
-  color: #4a9b7f;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  color: #4a5f75;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
 }
 
 .project-card h2 {
-  margin: 0 0 14px;
+  margin: 0;
   color: #1b3a52;
-  font-size: 1.45rem;
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  line-height: 1.1;
 }
 
-.project-card p {
-  margin: 0 0 20px;
+.project-summary {
+  margin: 0;
   color: #4a5f75;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
-.project-card ul {
+.project-features {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
+  gap: 14px;
+}
+
+.project-features li {
+  display: grid;
+  grid-template-columns: auto 1fr;
   gap: 12px;
-}
-
-.project-card ul li {
-  padding-left: 28px;
-  position: relative;
+  align-items: flex-start;
   color: #4a5f75;
+  font-weight: 500;
 }
 
-.project-card ul li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  top: 0;
+.feature-icon {
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  font-size: 0.95rem;
   color: #d4a574;
 }
 
-.project-images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
+.project-tech-list {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.project-images img {
-  width: 100%;
-  height: 100%;
-  min-height: 220px;
-  object-fit: cover;
-  border-radius: 18px;
-  border: 1px solid #f0ebe3;
-  background: #ffffff;
+.project-tech-list span {
+  display: inline-flex;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(212, 165, 116, 0.14);
+  color: #5c4a3d;
+  font-size: 0.82rem;
+  font-weight: 700;
 }
 
 @media (max-width: 900px) {
   .project-card {
-    grid-template-columns: 1fr;
+    padding: 28px;
   }
 }
 
@@ -199,10 +259,6 @@ permalink: /portfolio/
 
   .project-card {
     padding: 22px;
-  }
-
-  .project-images {
-    grid-template-columns: 1fr;
   }
 }
 </style>
