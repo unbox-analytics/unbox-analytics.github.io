@@ -1,2 +1,29 @@
-{% capture md %}{% include sections_md/portfolio.md %}{% endcapture %}
-{{ md | markdownify }}
+﻿<div class="section-heading">
+  {% capture md %}{% include sections_md/portfolio.md %}{% endcapture %}
+  {{ md | markdownify }}
+</div>
+
+<div class="projects-grid">
+  {% for project in site.data.projects %}
+    <article class="project-card">
+      <div class="project-card-top">
+        <div class="project-icon">{{ project.icon }}</div>
+        <div>
+          <span class="project-tag">{{ project.tag }}</span>
+          <h3>{{ project.title }}</h3>
+        </div>
+      </div>
+      <p class="project-summary">{{ project.summary }}</p>
+      <ul class="project-features">
+        {% for feature in project.features %}
+          <li><span class="feature-icon">•</span>{{ feature }}</li>
+        {% endfor %}
+      </ul>
+      <div class="project-tech-list">
+        {% for tech in project.techs %}
+          <span>{{ tech }}</span>
+        {% endfor %}
+      </div>
+    </article>
+  {% endfor %}
+</div>

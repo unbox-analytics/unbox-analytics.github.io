@@ -1,7 +1,7 @@
-## Let's Connect
+﻿## Let’s connect
 
-I'm always interested in discussing data engineering opportunities, collaborating on innovative projects, or sharing insights about the latest in data technology and machine learning.
+I am always interested in discussing analytics projects, collaborations, or sharing ideas.
 
 - **Email:** hello@unbox-analytics.com
-- **LinkedIn:** (link)
-- **GitHub:** (link)
+- **LinkedIn:** [Connect on LinkedIn](#)
+- **GitHub:** [Explore GitHub](https://github.com/unbox-analytics)

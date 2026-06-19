@@ -1,53 +1,55 @@
-<section class="hero">
-  <h1>Unpacking Practical Business Insights for Growing Businesses</h1>
+﻿<div class="hero">
+  <p class="eyebrow">Analytics for growing businesses</p>
+  <h1>Unpacking practical business insights for growing businesses</h1>
   <p class="hero-copy">Practical analytics solutions built for growing businesses using Excel, SQL, Power BI, and Power Query.</p>
-</section>
+</div>
 
-<hr />
-
-<h2 style="color: var(--color-accent);"> <img width="" alt="Transparent logo" src="{{ '/Assets/design_services_24dp_4D997F_FILL0_wght400_GRAD0_opsz24.svg' | relative_url }}"/>  Services</h2>
+<div class="section-intro">
+  {% capture md %}{% include sections_md/home.md %}{% endcapture %}
+  {{ md | markdownify }}
+</div>
 
 <div class="services-grid">
   <div class="service-card">
-    <div class="service-icon"><img width="" alt="Transparent logo" src="{{ '/Assets/design_services_24dp_4D997F_FILL0_wght400_GRAD0_opsz24.svg' | relative_url }}"/></div>
+    <div class="service-icon">📊</div>
     <h3>Data Cleaning & Transformation</h3>
-    <p>Turning messy data into actionable insights</p>
+    <p>Turning messy data into actionable insights by preparing, validating, and organizing your business data.</p>
     <a href="#portfolio">View projects →</a>
   </div>
-  
   <div class="service-card">
     <div class="service-icon">⚙️</div>
     <h3>Report Automation</h3>
-    <p>Streamlining recurring reports with Power Query and SQL</p>
+    <p>Streamlining regular reporting with SQL and automated processes so your team spends less time on routine work.</p>
     <a href="#portfolio">View projects →</a>
   </div>
-  
   <div class="service-card">
-    <div class="service-icon">📊</div>
+    <div class="service-icon">📈</div>
     <h3>Dashboard Development</h3>
-    <p>Creating clear, interactive Power BI dashboards</p>
+    <p>Building clear dashboards that help stakeholders monitor performance and find insights quickly.</p>
     <a href="#portfolio">View projects →</a>
   </div>
-  
   <div class="service-card">
     <div class="service-icon">🔧</div>
     <h3>Process Optimization</h3>
-    <p>Fixing inefficient data workflows and disconnected spreadsheets</p>
+    <p>Improving data workflows and fixing inefficient reporting processes so your analytics work better.</p>
     <a href="#portfolio">View projects →</a>
   </div>
 </div>
 
-<hr />
+<div class="section-heading">
+  <h2>Tools & platforms</h2>
+  <p>Deep experience across cloud, analytics, tooling, and reporting workflows.</p>
+</div>
 
-<h2 style="color: var(--color-accent);">📂 Featured Projects</h2>
-<p>🔗 <strong><a href="https://github.com/unbox-analytics/ipl_player_auction_analysis">IPL Players auction analysis</a></strong></p>
-<p>Explore data cleaning, analysis, and visualization projects for real-world business scenarios.</p>
-
-<p>🔗 <strong><a href="https://github.com/unbox-analytics/ecommerce">Ecommerce Data Analytics</a></strong></p>
-<p>Explore data cleaning, analysis, and visualization projects for real-world business scenarios.</p>
-
-<hr />
-
-{% capture md %}{% include sections_md/home.md %}{% endcapture %}
-{{ md | markdownify }}
-<div class="tech-stack">
+<div class="tech-grid">
+  {% for category in site.data.tech_categories %}
+  <div class="tech-item">
+    <div class="tech-item-name">{{ category.name }}</div>
+    <ul class="skill-list">
+      {% for item in category.items %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>

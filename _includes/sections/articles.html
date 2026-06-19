@@ -1,0 +1,15 @@
+﻿<div class="section-heading">
+  {% capture md %}{% include sections_md/articles.md %}{% endcapture %}
+  {{ md | markdownify }}
+</div>
+
+<div class="articles-grid">
+  {% for article in site.data.articles %}
+    <article class="article-card">
+      <span class="article-tag">{{ article.tag }}</span>
+      <h3>{{ article.title }}</h3>
+      <p>{{ article.excerpt }}</p>
+      <p class="article-date">{{ article.status }}</p>
+    </article>
+  {% endfor %}
+</div>
