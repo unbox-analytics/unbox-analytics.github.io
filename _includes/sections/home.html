@@ -1,12 +1,16 @@
 ﻿<div class="hero">
-  <p class="eyebrow">Analytics for growing businesses</p>
-  <h1>Unpacking practical business insights for growing businesses</h1>
-  <p class="hero-copy">Practical analytics solutions built for growing businesses using Excel, SQL, Power BI, and Power Query.</p>
+  <div class="hero-copy">
+    <p class="eyebrow">Analytics for growing businesses</p>
+    <h1>Unpacking practical business insights for growing businesses</h1>
+    <p class="hero-description">Practical analytics solutions built for growing businesses using Excel, SQL, Power BI, and Power Query.</p>
+    <a href="#portfolio" class="hero-cta">View featured work</a>
+  </div>
 </div>
 
-<div class="section-intro">
-  {% capture md %}{% include sections_md/home.md %}{% endcapture %}
-  {{ md | markdownify }}
+<div class="section-heading">
+  <span class="section-icon">🧭</span>
+  <h2>Capabilities</h2>
+  <p>Practical analytics services with polished execution, clear reporting, and business-ready insights.</p>
 </div>
 
 <div class="services-grid">
@@ -37,8 +41,9 @@
 </div>
 
 <div class="section-heading">
-  <h2>Tools & platforms</h2>
-  <p>Deep experience across cloud, analytics, tooling, and reporting workflows.</p>
+  <span class="section-icon">🗂️</span>
+  {% capture md %}{% include sections_md/home.md %}{% endcapture %}
+  {{ md | markdownify }}
 </div>
 
 <div class="tech-grid">
