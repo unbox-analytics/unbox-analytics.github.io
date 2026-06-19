@@ -1,3 +1,7 @@
 ﻿## Portfolio
 
-Practical analytics projects designed to move businesses forward with clear, measurable outcomes.
+- **Data Cleaning & Transformation** — Turning messy data into actionable insights.
+- **Report Automation** — Streamlining recurring reports with Power Query and SQL.
+- **Dashboard Development** — Creating clear, interactive Power BI dashboards.
+- **Process Optimization** — Fixing inefficient data workflows and disconnected spreadsheets.
+
