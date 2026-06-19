@@ -1,5 +1,13 @@
 title: Portfolio
-url: https://unbox-analytics.github.io/Home/
+url: https://unbox-analytics.github.io
+baseurl: ""
 description: Unbox Analytics
- show_downloads: true
+show_downloads: true
 theme: Minima
+
+# Defaults for asset handling
+defaults:
+  - scope:
+      path: "Assets"
+    values:
+      assets: true
