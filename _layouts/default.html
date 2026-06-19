@@ -108,6 +108,10 @@ header {
     color: #d4a574;
 }
 
+.nav-center a.active {
+    color: #d4a574;
+}
+
 .nav-center a::after {
     content: '';
     position: absolute;
@@ -246,6 +250,42 @@ em, strong {
         font-size: 1.25rem;
     }
 }
+
+/* Single-page additional styles */
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 1.35rem;
+    cursor: pointer;
+}
+
+.site-section {
+    padding: 56px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-section .projects-grid, .site-section .articles-grid {
+    margin-top: 18px;
+}
+
+.contact-section {
+    text-align: center;
+    background: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Mobile tweaks for nav toggle */
+@media (max-width: 768px) {
+    .nav-toggle { display: inline-block; }
+    .nav-center { display: none; position: absolute; left: 0; right: 0; top: 64px; background: #ffffff; padding: 12px 24px; box-shadow: 0 8px 20px rgba(18,35,44,0.06); flex-direction: column; gap: 12px; }
+    .nav-center.open { display: flex; }
+}
+
 </style>
 
 <header>
@@ -254,19 +294,76 @@ em, strong {
             <img class="brand-logo" src="{{ '/Assets/transparent_Logo_png.png' | relative_url }}" alt="Unbox Analytics logo" />
             <img class="brand-name-image" src="{{ '/Assets/transparent_Name_png.png' | relative_url }}" alt="Unbox Analytics name" />
         </div>
-        <nav class="nav-center">
-            <a href="{{ '/' | relative_url }}">Home</a>
-            <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
-            <a href="{{ '/articles/' | relative_url }}">Articles</a>
-            <a href="{{ '/about/' | relative_url }}">About</a>
-        </nav>
-        <a href="#contact" class="cta-button">Contact Us</a>
+                <nav class="nav-center" aria-label="Primary">
+                        <a href="#home">Home</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#articles">Articles</a>
+                        <a href="#about">About</a>
+                </nav>
+                <button class="nav-toggle" aria-label="Open menu">☰</button>
+                <a href="#contact" class="cta-button">Contact</a>
     </div>
 </header>
-<div class="MainBody">
-    {{ content }}
-</div>
+<main class="MainBody">
+    <!-- Home section: render index page content -->
+    <section id="home" class="site-section">
+        {% assign home = site.pages | where: "url", "/" | first %}
+        {{ home.content | markdownify }}
+    </section>
+
+    <!-- Portfolio section: render /portfolio/ -->
+    <section id="portfolio" class="site-section">
+        {% assign portfolio = site.pages | where: "url", "/portfolio/" | first %}
+        {{ portfolio.content | markdownify }}
+    </section>
+
+    <!-- Articles section: render /articles/ -->
+    <section id="articles" class="site-section">
+        {% assign articles = site.pages | where: "url", "/articles/" | first %}
+        {{ articles.content | markdownify }}
+    </section>
+
+    <!-- About section: render /about/ -->
+    <section id="about" class="site-section">
+        {% assign about = site.pages | where: "url", "/about/" | first %}
+        {{ about.content | markdownify }}
+    </section>
+
+    <!-- Contact anchor for CTA -->
+    <section id="contact" class="site-section contact-section">
+        <h2>Contact</h2>
+        <p>If you'd like to work together, email <a href="mailto:hello@unbox-analytics.com">hello@unbox-analytics.com</a> or use the links in the footer.</p>
+    </section>
+</main>
 <div class="footer">
     <p>© {{ site.time | date: '%Y' }} Unbox Analytics · Built with Jekyll</p>
     <p><a href="{{ '/' | relative_url }}">Home</a> · <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a> · <a href="{{ '/articles/' | relative_url }}">Articles</a> · <a href="{{ '/about/' | relative_url }}">About</a></p>
 </div>
+<script>
+// Mobile nav toggle
+const navToggle = document.querySelector('.nav-toggle');
+const navCenter = document.querySelector('.nav-center');
+if (navToggle && navCenter) {
+    navToggle.addEventListener('click', () => navCenter.classList.toggle('open'));
+}
+
+// Close mobile nav after clicking a link
+document.querySelectorAll('.nav-center a').forEach(a => {
+    a.addEventListener('click', () => {
+        if (navCenter) navCenter.classList.remove('open');
+    });
+});
+
+// Highlight active nav link while scrolling
+const sections = document.querySelectorAll('.site-section');
+const navLinks = document.querySelectorAll('.nav-center a');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === `#${id}`));
+        }
+    });
+}, { root: null, threshold: 0.45 });
+sections.forEach(s => observer.observe(s));
+</script>
