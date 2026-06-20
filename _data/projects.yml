@@ -1,6 +1,6 @@
-- id: cart_abandonment
+- id: debt_portfolio_analysis
   icon: "🛒"
-  tag: "DATA AUTOMATION • INVESTMENT ANALYSIS"
+  tag: "DATA AUTOMATION • DEBT INVESTMENT ANALYSIS"
   title: "Automation of periodic cashflow reports into investment intelligence"
   summary: "Sophisticated multi-stage data pipeline system that automates the ingestion of data for a portfolio of securities and deep dives into the performance. "
   features:
@@ -8,10 +8,9 @@
     - "Complex SQL logic with consent management, duplicate prevention, and multi-brand customer identification"
     - "Automated batch processing with cloud data warehouse to marketing platform integration and daily alerting"
   techs:
-    - "CLOUD DATA WAREHOUSE"
-    - "MARKETING AUTOMATION PLATFORM"
+    - "POWERQUERY"
+    - "MLANGUAGE"
     - "CLOUD WORKFLOWS"
-    - "INFRASTRUCTURE AS CODE"
     - "PYTHON"
   repo: "https://github.com/unbox-analytics/cart_abandonment"
 
