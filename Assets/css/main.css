@@ -225,6 +225,7 @@ hr {
   color: #f7f3ef;
   font-size: 1.05rem;
   line-height: 1.8;
+  text-align: center;
 }
 
 .hero-copy h1,
@@ -232,6 +233,7 @@ hr {
 .hero-copy .hero-description,
 .hero-copy .hero-cta {
   color: white;
+  text-align: center;
 }
 
 .hero-copy h1 {
