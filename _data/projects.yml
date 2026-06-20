@@ -1,8 +1,8 @@
 - id: cart_abandonment
   icon: "🛒"
-  tag: "DATA ENGINEERING • REVENUE GENERATION"
-  title: "Cart Abandonment Recovery System"
-  summary: "Sophisticated multi-stage data pipeline system that identifies cart abandoners across multiple product lines, then orchestrates targeted email campaigns through marketing automation platforms to recover lost revenue."
+  tag: "DATA AUTOMATION • INVESTMENT ANALYSIS"
+  title: "Automation of periodic cashflow reports into investment intelligence"
+  summary: "Sophisticated multi-stage data pipeline system that automates the ingestion of data for a portfolio of securities and deep dives into the performance. "
   features:
     - "Significant revenue recovery through intelligent customer journey orchestration and targeted email campaigns"
     - "Complex SQL logic with consent management, duplicate prevention, and multi-brand customer identification"
