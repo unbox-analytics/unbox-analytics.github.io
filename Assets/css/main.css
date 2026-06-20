@@ -87,7 +87,7 @@ header {
   letter-spacing: 0.18em;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--color-text);
+  color: var(--color-brand);
 }
 
 .nav-center {
