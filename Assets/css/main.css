@@ -205,7 +205,7 @@ hr {
   padding: 80px 0;
 }
 
-.hero {
+.home-section {
   padding: 120px 0 80px;
   text-align: center;
   background: linear-gradient(rgba(31,70,56,.72), rgba(31,70,56,.4)), url('../home_background.png') center/cover no-repeat;
