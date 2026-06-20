@@ -45,16 +45,3 @@
   {% capture md %}{% include sections_md/home.md %}{% endcapture %}
   {{ md | markdownify }}
 </div>
-
-<div class="tech-grid">
-  {% for category in site.data.tech_categories %}
-  <div class="tech-item">
-    <div class="tech-item-name">{{ category.name }}</div>
-    <ul class="skill-list">
-      {% for item in category.items %}
-      <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% endfor %}
-</div>

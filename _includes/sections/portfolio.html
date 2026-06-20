@@ -25,6 +25,9 @@
           <span>{{ tech }}</span>
         {% endfor %}
       </div>
+      <div class="project-actions">
+        <a class="project-button" href="{{ project.repo | default: 'https://github.com/unbox-analytics' }}" target="_blank" rel="noopener noreferrer">View repo</a>
+      </div>
     </article>
   {% endfor %}
 </div>

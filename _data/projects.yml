@@ -13,6 +13,7 @@
     - "CLOUD WORKFLOWS"
     - "INFRASTRUCTURE AS CODE"
     - "PYTHON"
+  repo: "https://github.com/unbox-analytics/cart_abandonment"
 
 - id: email_attribution
   icon: "📧"
@@ -29,6 +30,7 @@
     - "LOOKER STUDIO"
     - "CLOUD SCHEDULER"
     - "REVENUE ATTRIBUTION"
+  repo: "https://github.com/unbox-analytics/email_attribution"
 
 - id: anomaly_detection
   icon: "🛡️"
@@ -45,3 +47,4 @@
     - "CLOUD WORKFLOWS"
     - "CLOUD SCHEDULER"
     - "SECRET MANAGER"
+  repo: "https://github.com/unbox-analytics/anomaly_detection"
