@@ -210,8 +210,10 @@ hr {
   z-index: -100;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-position: center;
+  background-size: cover;
   background: linear-gradient(rgba(31,70,56,.72), rgba(31,70,56,.4)), url('../home_background.png') center/cover no-repeat;
 }
 
