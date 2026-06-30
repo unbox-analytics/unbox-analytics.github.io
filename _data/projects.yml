@@ -1,6 +1,27 @@
-- id: debt_portfolio_analysis
+- id: freelancer_data_automation
+  icon: "🧹"
+  tag: "POWER QUERY • DATA AUTOMATION • DATA QUALITY ENGINEERING"
+  title: "Automated Freelancer Data Cleaning and Validation Pipeline"
+  summary: "Designed and developed a modular Power Query data pipeline that automatically ingests, standardises, validates, and monitors freelancer data from multiple raw CSV files, transforming inconsistent source data into analysis-ready datasets."
+
+  features:
+
+    - "Built reusable Power Query functions for automated file ingestion, text standardisation, numeric extraction, gender normalisation, and boolean value cleansing across multiple source files"
+    - "Implemented a comprehensive data quality framework with row-level validation rules, duplicate detection, issue flagging, and human-readable error summaries for efficient remediation workflows"
+    - "Created separate clean, error, and audit datasets alongside portfolio-level data quality KPIs including pass rates, missing value analysis, and validation statistics"
+
+  techs:
+
+    - "POWER QUERY"
+    - "M LANGUAGE"
+    - "EXCEL"
+    - "DATA QUALITY"
+    - "ETL AUTOMATION"
+repo: "https://github.com/unbox-analytics/freelancer_dataset_powerquery_automation"
+
+- id: email_attribution
   icon: "🛒"
-  tag: "DATA AUTOMATION • DEBT INVESTMENT ANALYSIS"
+  tag: "DATA AUTOMATION • DATA PIPELINE BUILD"
   title: "Automation of periodic cashflow reports into investment intelligence"
   summary: "Sophisticated multi-stage data pipeline system that automates the ingestion of data for a portfolio of securities and deep dives into the performance. "
   features:
