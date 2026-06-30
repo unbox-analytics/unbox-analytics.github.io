@@ -1,22 +1,18 @@
 - id: freelancer_data_automation
   icon: "🧹"
-  tag: "POWER QUERY • DATA AUTOMATION • DATA QUALITY ENGINEERING"
-  title: "Automated Freelancer Data Cleaning and Validation Pipeline"
-  summary: "Designed and developed a modular Power Query data pipeline that automatically ingests, standardises, validates, and monitors freelancer data from multiple raw CSV files, transforming inconsistent source data into analysis-ready datasets."
+  tag: "DATA AUTOMATION • DATA QUALITY"
+  title: "Transforming messy freelancer data into reliable business intelligence"
+  summary: "Built an automated workflow that converts inconsistent freelancer data from multiple sources into a trusted, analysis-ready dataset for reporting and decision-making."
 
   features:
-
-    - "Built reusable Power Query functions for automated file ingestion, text standardisation, numeric extraction, gender normalisation, and boolean value cleansing across multiple source files"
-    - "Implemented a comprehensive data quality framework with row-level validation rules, duplicate detection, issue flagging, and human-readable error summaries for efficient remediation workflows"
-    - "Created separate clean, error, and audit datasets alongside portfolio-level data quality KPIs including pass rates, missing value analysis, and validation statistics"
+    - "Eliminated manual data cleaning and consolidation work across multiple files"
+    - "Automatically identified missing, inconsistent, and duplicate records before analysis"
+    - "Produced clean datasets and data quality reports to improve confidence in business insights"
 
   techs:
-
     - "POWER QUERY"
-    - "M LANGUAGE"
     - "EXCEL"
-    - "DATA QUALITY"
-    - "ETL AUTOMATION"
+    - "DATA AUTOMATION"
   repo: "https://github.com/unbox-analytics/freelancer_dataset_powerquery_automation"
 
 - id: email_attribution
