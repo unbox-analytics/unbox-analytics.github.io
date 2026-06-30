@@ -17,7 +17,7 @@
     - "EXCEL"
     - "DATA QUALITY"
     - "ETL AUTOMATION"
-repo: "https://github.com/unbox-analytics/freelancer_dataset_powerquery_automation"
+  repo: "https://github.com/unbox-analytics/freelancer_dataset_powerquery_automation"
 
 - id: email_attribution
   icon: "🛒"
